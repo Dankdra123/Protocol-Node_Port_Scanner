@@ -1,0 +1,55 @@
+{
+  "scanner": "Sentinel Scan",
+  "version": "0.1.0",
+  "target": "example.com",
+  "resolved_ip": "172.66.147.243",
+  "scan": {
+    "port_selection": "80,443",
+    "requested_ports": 2,
+    "scanned_ports": 2,
+    "open_ports": 2,
+    "workers": 2,
+    "connect_timeout_ms": 300,
+    "banner_grabbing": false,
+    "service_inspection": true,
+    "inspection_timeout_ms": 1000,
+    "elapsed_seconds": 0.1227663,
+    "ports_per_second": 16.291115721496862,
+    "cancelled": false
+  },
+  "results": [
+    {
+      "port": 80,
+      "service": "http",
+      "banner": "HTTP/1.1 200 OK",
+      "http": {
+        "status_code": 200,
+        "reason": "OK",
+        "server": "cloudflare",
+        "title": "Example Domain"
+      }
+    },
+    {
+      "port": 443,
+      "service": "https",
+      "banner": "HTTP/1.1 200 OK",
+      "http": {
+        "status_code": 200,
+        "reason": "OK",
+        "server": "cloudflare",
+        "title": "Example Domain"
+      },
+      "tls": {
+        "subject": "CN=example.com",
+        "issuer": "C=US, O=SSL Corporation, CN=Cloudflare TLS Issuing ECC CA 3",
+        "not_before": "May 31 21:39:12 2026 +00:00",
+        "not_after": "Aug 29 21:41:26 2026 +00:00",
+        "dns_names": [
+          "example.com",
+          "*.example.com"
+        ],
+        "validation": "not performed"
+      }
+    }
+  ]
+}
